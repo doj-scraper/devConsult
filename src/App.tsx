@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import type { ReactElement } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { Layout } from './components/layout/Layout';
@@ -12,7 +13,7 @@ import { Services } from './pages/Services';
 import { Capstones } from './pages/Capstones';
 import { OperationSwarm } from './pages/OperationSwarm';
 
-export default function App() {
+export default function App(): ReactElement {
   return (
     <HelmetProvider>
       <Router>
